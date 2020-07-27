@@ -1,0 +1,62 @@
+﻿@page "/CityList"
+@inject HttpClient Http
+
+<h1>Cities</h1>
+@if (cities == null)
+{
+    <p><em>Loading...</em></p>
+}
+else if (!cities.Any())
+{
+    <p><em>No Cities exist.  Please add some.</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Is capital?</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var city in cities)
+            {
+                <tr>
+                    <td>@city.Name</td>
+                    <td>@city.Description</td>
+                    <td>@city.IsCapital</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code{
+    private IList<City> cities;
+
+    protected override async Task OnInitializedAsync()
+    {
+        @* forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json"); *@
+        cities = await Http.GetFromJsonAsync<List<City>>("sample-data/cities.json");
+    }
+
+    class City
+    {
+        public int CityId { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public bool IsCapital { get; set; }
+
+        public ICollection<PointOfInterest> PointsOfInterest { get; set; } = new List<PointOfInterest>();
+    }
+
+    class PointOfInterest
+    {
+        public int PointOfInterestId { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public int CityId { get; set; }
+    }
+}

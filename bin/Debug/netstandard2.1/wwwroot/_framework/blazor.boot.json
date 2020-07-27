@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "CityBlazor.dll": "sha256-Fm0N+gkQYChkBR1HwWGBJadU5wNrzMX4OLhjG5SwiAM=",
+      "CityBlazor.dll": "sha256-f3RArbE59XorIk2xGPvbwITJqgjTEjeEMvzWmkgwGgE=",
       "System.Net.Http.Json.dll": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
       "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -60,7 +60,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-dwm+rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs="
     },
     "pdb": {
-      "CityBlazor.pdb": "sha256-plZh1F0rZGam0WHrn\/+EL9RVmEcdF0putXaKGiEvyeg="
+      "CityBlazor.pdb": "sha256-vR5fbMImWHZKzkgCWncpHM7GcxUVLoepqPHy2gSKLN8="
     },
     "runtime": {
       "dotnet.3.2.0.js": "sha256-mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=",

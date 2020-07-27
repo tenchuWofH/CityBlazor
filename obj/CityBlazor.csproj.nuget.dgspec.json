@@ -1,28 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ESA\\CityBlazor\\CityBlazor.csproj": {}
+    "D:\\Pessoal\\Projects\\NetCore\\CityBlazor\\CityBlazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ESA\\CityBlazor\\CityBlazor.csproj": {
+    "D:\\Pessoal\\Projects\\NetCore\\CityBlazor\\CityBlazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ESA\\CityBlazor\\CityBlazor.csproj",
+        "projectUniqueName": "D:\\Pessoal\\Projects\\NetCore\\CityBlazor\\CityBlazor.csproj",
         "projectName": "CityBlazor",
-        "projectPath": "C:\\Users\\ESA\\CityBlazor\\CityBlazor.csproj",
-        "packagesPath": "C:\\Users\\ESA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ESA\\CityBlazor\\obj\\",
+        "projectPath": "D:\\Pessoal\\Projects\\NetCore\\CityBlazor\\CityBlazor.csproj",
+        "packagesPath": "D:\\Users\\silviob\\.nuget\\packages\\",
+        "outputPath": "D:\\Pessoal\\Projects\\NetCore\\CityBlazor\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ESA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "D:\\Users\\silviob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.geap.com.br/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
