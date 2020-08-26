@@ -541,7 +541,6 @@ D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\Razor\_Imports.r
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\CityBlazor.RazorTargetAssemblyInfo.cache
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\CityBlazor.csproj.CopyComplete
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\blazor\unlinked.output
-D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\f3RArbE59XorIk2xGPvbwITJqgjTEjeEMvzWmkgwGgE=.hash
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\99dseBOagY3mzu5Y8Eqm8gRI_o8QbbCp7R2Ew9bQ_5E=.hash
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash
@@ -593,13 +592,11 @@ D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\zNP4aH
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\oAIlpv09S-0jXnze744E1V88Oaw8Ql1x3Alw0hsVYdw=.hash
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\K3dpli228kQQ75WVqoiIdmn8u8q8gZHixcWDdCHCRgU=.hash
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\dwm_rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs=.hash
-D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\vR5fbMImWHZKzkgCWncpHM7GcxUVLoepqPHy2gSKLN8=.hash
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\oU0moF6IIkna1pMoSD6Ze63s6aHfjCtUflz7xDmENPg=.hash
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\blazor\blazor.boot.json
-D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\GThlp4UKTeRkTtpAaV1U5YXTrCDVdhMYUvB4p0a4eQw=.hash
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\compressed\_framework\_bin\CityBlazor.dll.gz
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Net.Http.Json.dll.gz
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Buffers.dll.gz
@@ -718,3 +715,7 @@ D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\compressed\_fram
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\compressed\_framework\blazor.boot.json.br
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\staticwebassets\CityBlazor.StaticWebAssets.Manifest.cache
 D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\staticwebassets\CityBlazor.StaticWebAssets.xml
+D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\W6TvVzvKgkSVVHEwcMuSikuYV4GH4VIb_8uilOomsB8=.hash
+D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\cbA7LczDqffJwuKboufCzYYLnvppW6HKwaU5lOxPx1o=.hash
+D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\integrity\mWJlE41m6W442LtAV7Uz1rKbSe6VVnStrRuCVucYpT8=.hash
+D:\Pessoal\Projects\NetCore\CityBlazor\obj\Debug\netstandard2.1\RazorDeclaration\Pages\CityEdit.razor.g.cs

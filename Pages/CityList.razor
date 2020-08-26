@@ -1,5 +1,6 @@
 ﻿@page "/CityList"
 @inject HttpClient Http
+@using CityBlazor.Models
 
 <h1>Cities</h1>
 @if (cities == null)
@@ -18,6 +19,7 @@ else
                 <th>Name</th>
                 <th>Description</th>
                 <th>Is capital?</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -27,6 +29,14 @@ else
                     <td>@city.Name</td>
                     <td>@city.Description</td>
                     <td>@city.IsCapital</td>
+                    <td>
+                    <a href="@($"citydetail/{city.CityId}")" class="btn btn-primary table-btn">
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                    <a href="@($"cityedit/{city.CityId}")" class="btn btn-primary table-btn">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                </td>
                 </tr>
             }
         </tbody>
@@ -42,21 +52,7 @@ else
         cities = await Http.GetFromJsonAsync<List<City>>("sample-data/cities.json");
     }
 
-    class City
-    {
-        public int CityId { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public bool IsCapital { get; set; }
+    
 
-        public ICollection<PointOfInterest> PointsOfInterest { get; set; } = new List<PointOfInterest>();
-    }
-
-    class PointOfInterest
-    {
-        public int PointOfInterestId { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public int CityId { get; set; }
-    }
+    
 }
