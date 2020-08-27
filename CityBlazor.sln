@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityBlazor.Shared", "CityBlazor.Shared\CityBlazor.Shared.csproj", "{A73904B7-EA10-406E-BEEE-22D36C9C4ECB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityBlazorApp", "CityBlazor.App\CityBlazorApp.csproj", "{241B2901-EF79-447D-A690-D9876BBFBBD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A73904B7-EA10-406E-BEEE-22D36C9C4ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73904B7-EA10-406E-BEEE-22D36C9C4ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73904B7-EA10-406E-BEEE-22D36C9C4ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73904B7-EA10-406E-BEEE-22D36C9C4ECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{241B2901-EF79-447D-A690-D9876BBFBBD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{241B2901-EF79-447D-A690-D9876BBFBBD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{241B2901-EF79-447D-A690-D9876BBFBBD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{241B2901-EF79-447D-A690-D9876BBFBBD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3873B2E8-2233-45BF-A67C-87812E5E7A65}
+	EndGlobalSection
+EndGlobal

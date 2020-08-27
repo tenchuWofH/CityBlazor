@@ -1,0 +1,9 @@
+D:\Pessoal\Projects\CityBlazor\CityBlazor.Shared\bin\Debug\netstandard2.0\CityBlazor.Shared.deps.json
+D:\Pessoal\Projects\CityBlazor\CityBlazor.Shared\bin\Debug\netstandard2.0\CityBlazor.Shared.dll
+D:\Pessoal\Projects\CityBlazor\CityBlazor.Shared\bin\Debug\netstandard2.0\CityBlazor.Shared.pdb
+D:\Pessoal\Projects\CityBlazor\CityBlazor.Shared\obj\Debug\netstandard2.0\CityBlazor.Shared.csprojAssemblyReference.cache
+D:\Pessoal\Projects\CityBlazor\CityBlazor.Shared\obj\Debug\netstandard2.0\CityBlazor.Shared.AssemblyInfoInputs.cache
+D:\Pessoal\Projects\CityBlazor\CityBlazor.Shared\obj\Debug\netstandard2.0\CityBlazor.Shared.AssemblyInfo.cs
+D:\Pessoal\Projects\CityBlazor\CityBlazor.Shared\obj\Debug\netstandard2.0\CityBlazor.Shared.csproj.CoreCompileInputs.cache
+D:\Pessoal\Projects\CityBlazor\CityBlazor.Shared\obj\Debug\netstandard2.0\CityBlazor.Shared.dll
+D:\Pessoal\Projects\CityBlazor\CityBlazor.Shared\obj\Debug\netstandard2.0\CityBlazor.Shared.pdb

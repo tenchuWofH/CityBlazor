@@ -1,0 +1,14 @@
+D:\Pessoal\Projects\CityBlazor\CityBlazor.App\obj\Debug\netstandard2.1\CityBlazorApp.AssemblyInfoInputs.cache
+D:\Pessoal\Projects\CityBlazor\CityBlazor.App\obj\Debug\netstandard2.1\CityBlazorApp.AssemblyInfo.cs
+D:\Pessoal\Projects\CityBlazor\CityBlazor.App\obj\Debug\netstandard2.1\CityBlazorApp.csproj.CoreCompileInputs.cache
+D:\Pessoal\Projects\CityBlazor\CityBlazor.App\obj\Debug\netstandard2.1\CityBlazorApp.RazorComponent.input.cache
+D:\Pessoal\Projects\CityBlazor\CityBlazor.App\obj\Debug\netstandard2.1\RazorDeclaration\App.razor.g.cs
+D:\Pessoal\Projects\CityBlazor\CityBlazor.App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\CityEdit.razor.g.cs
+D:\Pessoal\Projects\CityBlazor\CityBlazor.App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\CityList.razor.g.cs
+D:\Pessoal\Projects\CityBlazor\CityBlazor.App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Counter.razor.g.cs
+D:\Pessoal\Projects\CityBlazor\CityBlazor.App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\FetchData.razor.g.cs
+D:\Pessoal\Projects\CityBlazor\CityBlazor.App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Index.razor.g.cs
+D:\Pessoal\Projects\CityBlazor\CityBlazor.App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+D:\Pessoal\Projects\CityBlazor\CityBlazor.App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+D:\Pessoal\Projects\CityBlazor\CityBlazor.App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+D:\Pessoal\Projects\CityBlazor\CityBlazor.App\obj\Debug\netstandard2.1\RazorDeclaration\_Imports.razor.g.cs
