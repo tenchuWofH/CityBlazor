@@ -1,4 +1,4 @@
-namespace CityBlazor.Models
+namespace CityBlazor.Shared.Models
 {
     public class PointOfInterest
     {

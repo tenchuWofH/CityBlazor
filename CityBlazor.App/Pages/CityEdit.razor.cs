@@ -3,15 +3,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CityBlazor.Models;
-// using CityBlazor.App.Services;
+using CityBlazor.Shared.Models;
+using CityBlazor.App.Services;
 
 namespace CityBlazor.App.Pages
 {
     public partial class CityeEdit
     {
         [Inject]
-        public CityBlazor.App.Services.ICityDataService CityDataService { get; set; }
+        public ICityDataService CityDataService { get; set; }
         
         [Parameter]
         public string CityId { get; set; }
@@ -29,7 +29,7 @@ namespace CityBlazor.App.Pages
         {
             Saved = false;
             
-            int.TryParse(CityId, out var CityId);
+            int.TryParse(this.CityId, out var CityId);
 
             if (CityId == 0) //new City is being created
             {
@@ -38,7 +38,7 @@ namespace CityBlazor.App.Pages
             }
             else
             {
-                City = await CityDataService.GetCityDetails(int.Parse(CityId));
+                City = await CityDataService.GetCityDetails(int.Parse(this.CityId));
             }
 
        }
@@ -49,7 +49,7 @@ namespace CityBlazor.App.Pages
             
             if (City.CityId == 0) //new
             {
-                var addedCity = await CityDataService.AddCity(City);
+                var addedCity = await CityDataService.AddCity(this.City);
                 if (addedCity != null)
                 {
                     StatusClass = "alert-success";
@@ -65,7 +65,7 @@ namespace CityBlazor.App.Pages
             }
             else
             {
-                await CityDataService.UpdateCity(City);
+                await CityDataService.UpdateCity(this.City);
                 StatusClass = "alert-success";
                 Message = "City updated successfully.";
                 Saved = true;
@@ -80,7 +80,7 @@ namespace CityBlazor.App.Pages
 
         protected async Task DeleteCity()
         {
-            await CityDataService.DeleteCity(City.CityId);
+            await CityDataService.DeleteCity(this.City.CityId);
 
             StatusClass = "alert-success";
             Message = "Deleted successfully";

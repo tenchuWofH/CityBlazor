@@ -430,6 +430,16 @@
         "runtime": {
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
+      },
+      "CityBlazor.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/CityBlazor.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CityBlazor.Shared.dll": {}
+        }
       }
     }
   },
@@ -1440,10 +1450,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CityBlazor.Shared/1.0.0": {
+      "type": "project",
+      "path": "../CityBlazor.Shared/CityBlazor.Shared.csproj",
+      "msbuildProject": "../CityBlazor.Shared/CityBlazor.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
+      "CityBlazor.Shared >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 3.2.0",
       "Microsoft.AspNetCore.Components.WebAssembly.Build >= 3.2.0",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 3.2.0",
@@ -1477,7 +1493,11 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Pessoal\\Projects\\CityBlazor\\CityBlazor.Shared\\CityBlazor.Shared.csproj": {
+              "projectPath": "D:\\Pessoal\\Projects\\CityBlazor\\CityBlazor.Shared\\CityBlazor.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

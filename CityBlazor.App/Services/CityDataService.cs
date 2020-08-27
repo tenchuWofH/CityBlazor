@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using CityBlazor.Models;
+using CityBlazor.Shared.Models;
 
 namespace CityBlazor.App.Services
 {
@@ -46,7 +46,7 @@ namespace CityBlazor.App.Services
             await _httpClient.DeleteAsync($"api/City/{CityId}");
         }
 
-        public async Task<IEnumerable<City>> GetAllCitys()
+        public async Task<IEnumerable<City>> GetAllCities()
         {
             // return await _httpClient.GetFromJsonAsync<List<City>>("sample-data/cities.json");
     

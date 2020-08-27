@@ -28,7 +28,11 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Pessoal\\Projects\\CityBlazor\\CityBlazor.Shared\\CityBlazor.Shared.csproj": {
+                "projectPath": "D:\\Pessoal\\Projects\\CityBlazor\\CityBlazor.Shared\\CityBlazor.Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -74,6 +78,63 @@
               "privateAssets": "all"
             }
           },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Pessoal\\Projects\\CityBlazor\\CityBlazor.Shared\\CityBlazor.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Pessoal\\Projects\\CityBlazor\\CityBlazor.Shared\\CityBlazor.Shared.csproj",
+        "projectName": "CityBlazor.Shared",
+        "projectPath": "D:\\Pessoal\\Projects\\CityBlazor\\CityBlazor.Shared\\CityBlazor.Shared.csproj",
+        "packagesPath": "D:\\Users\\silviob\\.nuget\\packages\\",
+        "outputPath": "D:\\Pessoal\\Projects\\CityBlazor\\CityBlazor.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\Users\\silviob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.geap.com.br/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/geap/_packaging/nuget-geap/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }

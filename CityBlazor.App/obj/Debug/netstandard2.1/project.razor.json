@@ -41,39 +41,6 @@
         }
       },
       {
-        "HashCode": -210663205,
-        "Kind": "Components.Component",
-        "Name": "CityBlazorApp.Pages.CityEdit",
-        "AssemblyName": "CityBlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CityEdit"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "CityBlazorApp.Pages.CityEdit"
-        }
-      },
-      {
-        "HashCode": -1132503263,
-        "Kind": "Components.Component",
-        "Name": "CityBlazorApp.Pages.CityEdit",
-        "AssemblyName": "CityBlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CityBlazorApp.Pages.CityEdit"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "CityBlazorApp.Pages.CityEdit",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -178891122,
         "Kind": "Components.Component",
         "Name": "CityBlazorApp.Pages.CityList",
@@ -202,6 +169,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "CityBlazorApp.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -210663205,
+        "Kind": "Components.Component",
+        "Name": "CityBlazorApp.Pages.CityEdit",
+        "AssemblyName": "CityBlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CityEdit"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "CityBlazorApp.Pages.CityEdit"
+        }
+      },
+      {
+        "HashCode": -1132503263,
+        "Kind": "Components.Component",
+        "Name": "CityBlazorApp.Pages.CityEdit",
+        "AssemblyName": "CityBlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CityBlazorApp.Pages.CityEdit"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "CityBlazorApp.Pages.CityEdit",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
