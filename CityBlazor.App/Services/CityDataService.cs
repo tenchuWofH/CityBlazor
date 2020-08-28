@@ -7,7 +7,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using CityBlazor.Shared.Models;
 
-namespace CityBlazor.App.Services
+namespace CityBlazorApp.Services
 {
     public class CityDataService : ICityDataService
     {

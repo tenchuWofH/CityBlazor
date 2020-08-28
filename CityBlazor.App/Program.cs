@@ -7,8 +7,9 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using CityBlazorApp.Services;
 
-namespace CityBlazor
+namespace CityBlazorApp
 {
     public class Program
     {
@@ -18,6 +19,8 @@ namespace CityBlazor
             builder.RootComponents.Add<App>("app");
 
             builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            //builder.Services.AddHttpClient<ICityDataService, CityDataService>(client => client.BaseAddress = new Uri("https://localhost:44340/"));
+            builder.Services.AddTransient<ICityDataService, CityDataService>();
 
             await builder.Build().RunAsync();
         }

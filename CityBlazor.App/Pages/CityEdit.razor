@@ -1,37 +1,10 @@
-﻿@page "/CityEdit"
+﻿@*@page "/CityEdit"*@
 @page "/CityEdit/{CityId}"
+@using CityBlazorApp.Pages
+@*@inherits CityEdit*@
 
-@using CityBlazor.Shared.Models
+<h1>CityEdit</h1>
 
-<h1>Cities</h1>
-@if (City == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <div class="row">
-        <div class="col-md-9">
-            <form class="form form-horizontal">
-                <div class="form-group">
-                    <label class="col-md-2 control-label">Name:</label>
-                    <div class="col-md-7">
-                        <input type="text" bind=@this.City.Name class="form-control" />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-2 control-label">Description:</label>
-                    <div class="col-md-7">
-                        <input type="text" bind=@City.Description class="form-control" />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-2 control-label"></label>
-                    @*<div class="col-md-7">
-                            <button class="btn btn-primary" onclick=@Save>Save</button>
-                        </div>*@
-                </div>
-            </form>
-        </div>
-    </div>
-}
+<h2>
+    @*@CityBlazorApp.Pages*@
+</h2>

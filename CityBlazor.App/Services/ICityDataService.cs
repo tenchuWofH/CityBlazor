@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CityBlazor.Shared.Models;
 
-namespace CityBlazor.App.Services
+namespace CityBlazorApp.Services
 {
     public interface ICityDataService
     {

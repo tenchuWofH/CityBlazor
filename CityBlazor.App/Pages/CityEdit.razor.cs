@@ -1,26 +1,29 @@
-using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Components;
 using CityBlazor.Shared.Models;
-using CityBlazor.App.Services;
+using CityBlazorApp.Services;
 
-namespace CityBlazor.App.Pages
+namespace CityBlazorApp.Pages
 {
-    public partial class CityeEdit
+    //public partial class CityeEdit
+    public partial class CityEdit : ComponentBase //BlazorComponent
     {
         [Inject]
         public ICityDataService CityDataService { get; set; }
-        
+
         [Parameter]
         public string CityId { get; set; }
 
         [Inject]
         public NavigationManager NavigationManager { get; set; }
 
-        public City City { get; set; } = new City();
-        
+        protected City EditedCity { get; set; }
+
+        protected int MyProperty { get; set; }
+
         protected string Message = string.Empty;
         protected string StatusClass = string.Empty;
         protected bool Saved;
@@ -28,28 +31,28 @@ namespace CityBlazor.App.Pages
         protected override async Task OnInitializedAsync()
         {
             Saved = false;
-            
+
             int.TryParse(this.CityId, out var CityId);
 
             if (CityId == 0) //new City is being created
             {
                 //add some defaults
-                City = new City { CityId = 1, Name = "Default City", Description = "Some default description" };
+                this.EditedCity = new City { CityId = 1, Name = "Default City", Description = "Some default description" };
             }
             else
             {
-                City = await CityDataService.GetCityDetails(int.Parse(this.CityId));
+                this.EditedCity = await CityDataService.GetCityDetails(int.Parse(this.CityId));
             }
 
-       }
+        }
 
         protected async Task HandleValidSubmit()
         {
             Saved = false;
-            
-            if (City.CityId == 0) //new
+
+            if (this.EditedCity.CityId == 0) //new
             {
-                var addedCity = await CityDataService.AddCity(this.City);
+                var addedCity = await CityDataService.AddCity(this.EditedCity);
                 if (addedCity != null)
                 {
                     StatusClass = "alert-success";
@@ -65,7 +68,7 @@ namespace CityBlazor.App.Pages
             }
             else
             {
-                await CityDataService.UpdateCity(this.City);
+                await CityDataService.UpdateCity(this.EditedCity);
                 StatusClass = "alert-success";
                 Message = "City updated successfully.";
                 Saved = true;
@@ -80,7 +83,7 @@ namespace CityBlazor.App.Pages
 
         protected async Task DeleteCity()
         {
-            await CityDataService.DeleteCity(this.City.CityId);
+            await CityDataService.DeleteCity(this.EditedCity.CityId);
 
             StatusClass = "alert-success";
             Message = "Deleted successfully";
@@ -94,3 +97,4 @@ namespace CityBlazor.App.Pages
         }
     }
 }
+
