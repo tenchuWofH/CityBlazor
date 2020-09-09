@@ -20,7 +20,7 @@ namespace CityBlazorApp.Pages
         [Inject]
         public NavigationManager NavigationManager { get; set; }
 
-        protected City EditedCity { get; set; }
+        public City EditedCity { get; set; } = new City();
 
         protected int MyProperty { get; set; }
 

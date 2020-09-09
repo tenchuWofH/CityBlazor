@@ -19,8 +19,8 @@ namespace CityBlazorApp
             builder.RootComponents.Add<App>("app");
 
             builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-            //builder.Services.AddHttpClient<ICityDataService, CityDataService>(client => client.BaseAddress = new Uri("https://localhost:44340/"));
-            builder.Services.AddTransient<ICityDataService, CityDataService>();
+            builder.Services.AddHttpClient<ICityDataService, CityDataService>(client => client.BaseAddress = new Uri("https://localhost:44308/"));// 44340/"));
+            //builder.Services.AddTransient<ICityDataService, CityDataService>();
 
             await builder.Build().RunAsync();
         }
