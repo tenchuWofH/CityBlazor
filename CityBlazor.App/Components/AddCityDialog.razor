@@ -1,0 +1,67 @@
+﻿@using CityBlazor.Shared.Enums
+
+@if (ShowDialog)
+{
+    <div class="modal fade show d-block" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleLabel">City Quick Add</h5>
+                    <button type="button" class="close" @onclick="@Close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <EditForm Model="@NewCity" OnValidSubmit="@HandleValidSubmit">
+
+                        <DataAnnotationsValidator />
+                        <ValidationSummary />
+
+                        <div class="form-group row">
+                            <label for="Name" class="col-sm-3">Name: </label>
+                            <InputText id="Name" class="form-control col-sm-8" @bind-Value="@NewCity.Name" placeholder="Enter name"></InputText>
+                            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => NewCity.Name)" />
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="Description" class="col-sm-3">First name: </label>
+                            <InputText id="Description" class="form-control col-sm-8" @bind-Value="@NewCity.Description" placeholder="Enter description"></InputText>
+                            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => NewCity.Description)" />
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="country" class="col-sm-3">Country: </label>
+                            <InputSelect id="country" class="form-control col-sm-8" @bind-Value="@CountryCode">
+                                @foreach (var country in Countries)
+                                    {
+                                    <option value="@country.Code">@country.Name</option>
+                                    }
+                            </InputSelect>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label for="gender" class="col-sm-3">Capital?: </label>
+                            <InputSelect id="IsCapital" class="form-control col-sm-8" @bind-Value=@IsCapital>
+                                <option value="@(SimpleChoice.Nao)">Não</option>
+                                <option value="@(SimpleChoice.Sim)">Sim</option>
+                            </InputSelect>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label for="RegistrationDate" class="col-sm-3">Registred on: </label>
+                            <InputDate id="RegistrationDate" class="form-control col-sm-8" @bind-Value="@NewCity.RegistrationDate" placeholder="Enter registration date"></InputDate>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">Save city</button>
+                        <a class="btn btn-outline-primary" @onclick="@Close">Close</a>
+                    </EditForm>
+
+                </div>
+            </div>
+        </div>
+    </div>
+}

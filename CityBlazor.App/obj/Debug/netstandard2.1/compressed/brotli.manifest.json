@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\SfShYZiuim7Ynv2CbL1r7E1-Ii6Y2LQZQXoTwCmfANw=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\f8jtuC7CcQaqlHXnWO9ruPHxJhEawygERbQ1UED-6QY=.hash",
       "Source": "D:\\Pessoal\\Projects\\CityBlazor\\CityBlazor.App\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\CityBlazorApp.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/CityBlazorApp.dll.br"
     },
@@ -216,7 +216,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\nDbPPZ6J1543FF3D7LtEadU-D9q_bvc3rCiWLH_xiA0=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\t0wyTGfJVtmDkaNG7f5iiYjy-nf0oMbLd5lGWvKNlaY=.hash",
       "Source": "D:\\Pessoal\\Projects\\CityBlazor\\CityBlazor.App\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\CityBlazor.Shared.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/CityBlazor.Shared.dll.br"
     },
@@ -271,12 +271,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\88KU_zqyZB8tL7NN2fIru-OSvMv-Pg-LTEPCZyP-w5Q=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\nBiHn1Ivl22SVyihuzN0wMByjZqB-bV608POEINe5BE=.hash",
       "Source": "D:\\Pessoal\\Projects\\CityBlazor\\CityBlazor.App\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\CityBlazorApp.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/CityBlazorApp.pdb.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\jrXoYJoLrlrANDHEVPP6xYVl0aDr_YsLVBX9ReQehtY=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ssoJjWoxpExWjBus8Ic6gN_P_RR5-7-R6avOrMt8rQg=.hash",
       "Source": "D:\\Pessoal\\Projects\\CityBlazor\\CityBlazor.App\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\CityBlazor.Shared.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/CityBlazor.Shared.pdb.br"
     },
@@ -301,7 +301,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Wl6YECeT98L3ISVTTCrLkkMYtz-AJ7E-YBTX21j9YOc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\BYGIIzOih8_Sk2YRM92VfH_tswNnBmnckLElIP3GyxY=.hash",
       "Source": "D:\\Pessoal\\Projects\\CityBlazor\\CityBlazor.App\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }

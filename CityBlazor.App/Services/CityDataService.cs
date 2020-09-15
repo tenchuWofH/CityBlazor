@@ -18,7 +18,7 @@ namespace CityBlazorApp.Services
             _httpClient = httpClient;
         }
 
-        public async Task<City> AddCity(City City)
+        public async Task<City> Add(City City)
         {
             var CityJson =
                 new StringContent(JsonSerializer.Serialize(City), Encoding.UTF8, "application/json");
@@ -33,7 +33,7 @@ namespace CityBlazorApp.Services
             return null;
         }
 
-        public async Task UpdateCity(City City)
+        public async Task Update(City City)
         {
             var CityJson =
                 new StringContent(JsonSerializer.Serialize(City), Encoding.UTF8, "application/json");
@@ -41,12 +41,12 @@ namespace CityBlazorApp.Services
             await _httpClient.PutAsync("api/City", CityJson);
         }
 
-        public async Task DeleteCity(int CityId)
+        public async Task Delete(int CityId)
         {
             await _httpClient.DeleteAsync($"api/City/{CityId}");
         }
 
-        public async Task<IEnumerable<City>> GetAllCities()
+        public async Task<IEnumerable<City>> Get()
         {
             // return await _httpClient.GetFromJsonAsync<List<City>>("sample-data/cities.json");
     
@@ -56,7 +56,7 @@ namespace CityBlazorApp.Services
                     (await _httpClient.GetStreamAsync("sample-data/cities.json"), new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
         }
 
-        public async Task<City> GetCityDetails(int CityId)
+        public async Task<City> Get(int CityId)
         {
             //TODO: verificar, após incorporar a Api, se a busca pelo Id fica correta
             //////return await JsonSerializer.DeserializeAsync<City>
@@ -81,7 +81,7 @@ namespace CityBlazorApp.Services
             //    return null;
             //}
 
-            var cities = await GetAllCities();
+            var cities = await Get();
             return cities.Where(x => x.CityId == CityId).FirstOrDefault();
         }
 

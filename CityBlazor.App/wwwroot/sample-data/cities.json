@@ -13,17 +13,17 @@
       {
         "PointOfInterestId": 1,
         "Name": "Cine Itapuã",
-        "Description": "Cinema da Cidade aponsetado"
+        "Description": "Cinema da cidade aponsetado"
       },
       {
         "PointOfInterestId": 2,
         "Name": "Igreja São Sebastião",
-        "Description": "Paróquia da Cidade"
+        "Description": "Paróquia da cidade"
       },
       {
         "PointOfInterestId": 3,
         "Name": "Sayonara",
-        "Description": "Referência Entrada da Cidade"
+        "Description": "Referência entrada da cidade"
       }
     ]
   },
@@ -41,12 +41,12 @@
       {
         "PointOfInterestId": 4,
         "Name": "Terraço Shopping",
-        "Description": "Shopping da Cidade"
+        "Description": "Shopping da cidade"
       },
       {
         "PointOfInterestId": 5,
         "Name": "HFA",
-        "Description": "Hospital da Cidade"
+        "Description": "Hospital da cidade"
       }
     ]
   }

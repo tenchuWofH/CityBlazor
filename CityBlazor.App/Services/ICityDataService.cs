@@ -8,10 +8,10 @@ namespace CityBlazorApp.Services
 {
     public interface ICityDataService
     {
-        Task<IEnumerable<City>> GetAllCities();
-        Task<City> GetCityDetails(int CityId);
-        Task<City> AddCity(City City);
-        Task UpdateCity(City City);
-        Task DeleteCity(int CityId);
+        Task<IEnumerable<City>> Get();
+        Task<City> Get(int CityId);
+        Task<City> Add(City City);
+        Task Update(City City);
+        Task Delete(int CityId);
     }
 }

@@ -79,6 +79,13 @@ using CityBlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "D:\Pessoal\Projects\CityBlazor\CityBlazor.App\_Imports.razor"
+using CityBlazorApp.Components;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {

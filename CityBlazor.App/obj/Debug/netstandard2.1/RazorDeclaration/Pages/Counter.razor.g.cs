@@ -83,6 +83,13 @@ using CityBlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "D:\Pessoal\Projects\CityBlazor\CityBlazor.App\_Imports.razor"
+using CityBlazorApp.Components;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {

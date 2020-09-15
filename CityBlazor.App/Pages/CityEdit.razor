@@ -4,12 +4,14 @@
 @*@inherits CityEdit*@
 
 @using CityBlazor.Shared.Models
+@using CityBlazor.Shared.Enums
+
 
 @if (!Saved)
 {
     <section class="employee-edit">
         <h1 class="page-title">Details for @EditedCity.Name</h1>
-        <EditForm Model="@City" OnValidSubmit="@HandleValidSubmit"
+        <EditForm Model="@EditedCity" OnValidSubmit="@HandleValidSubmit"
                   OnInvalidSubmit="@HandleInvalidSubmit">
             <DataAnnotationsValidator />
             <ValidationSummary></ValidationSummary>
@@ -27,10 +29,10 @@
 
             <div class="form-group row">
                 <label for="country" class="col-sm-3">Country: </label>
-                <InputSelect id="country" class="form-control col-sm-8" @bind-Value="@CountryId">
+                <InputSelect id="country" class="form-control col-sm-8" @bind-Value="@CountryCode">
                     @foreach (var country in Countries)
                         {
-                        <option value="@country.code">@country.name</option>
+                        <option value="@country.Code">@country.Name</option>
                         }
                 </InputSelect>
             </div>
@@ -38,10 +40,9 @@
             
             <div class="form-group row">
                 <label for="gender" class="col-sm-3">Capital?: </label>
-                <InputSelect id="IsCapital" class="form-control col-sm-8" @bind-Value=@EditedCity.IsCapital>
-                    <option value="@(Gender.Male)">Male</option>
-                    <option value="@(Gender.Female)">Female</option>
-                    <option value="@(Gender.Other)">Other</option>
+                <InputSelect id="IsCapital" class="form-control col-sm-8" @bind-Value=@IsCapital>
+                    <option value="@(SimpleChoice.Nao)">Não</option>
+                    <option value="@(SimpleChoice.Sim)">Sim</option>
                 </InputSelect>
             </div>
 
@@ -52,11 +53,11 @@
             </div>
 
 
-            <button type="submit" class="btn btn-primary edit-btn">Save employee</button>
+            <button type="submit" class="btn btn-primary edit-btn">Save city</button>
 
-            @if (EditedCity.EmployeeId > 0)
+            @if (EditedCity.CityId > 0)
             {
-                <a class="btn btn-danger" @onclick="@DeleteEmployee">
+                <a class="btn btn-danger" @onclick="@DeleteCity">
                     Delete
                 </a>
             }

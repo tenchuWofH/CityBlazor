@@ -13,6 +13,8 @@ namespace CityBlazorApp.Pages
     {
         [Inject]
         public ICityDataService CityDataService { get; set; }
+        [Inject]
+        public ICountryDataService CountryDataService { get; set; }
 
         [Parameter]
         public string CityId { get; set; }
@@ -21,9 +23,12 @@ namespace CityBlazorApp.Pages
         public NavigationManager NavigationManager { get; set; }
 
         public City EditedCity { get; set; } = new City();
+        public List<Country> Countries { get; set; } = new List<Country>();
+        //used because InputSelect (video explained)
+        protected string CountryCode = string.Empty;
+        protected string IsCapital = string.Empty;
 
-        protected int MyProperty { get; set; }
-
+        //used to store state of screen
         protected string Message = string.Empty;
         protected string StatusClass = string.Empty;
         protected bool Saved;
@@ -31,28 +36,31 @@ namespace CityBlazorApp.Pages
         protected override async Task OnInitializedAsync()
         {
             Saved = false;
+            Countries = (await CountryDataService.Get()).ToList();
 
             int.TryParse(this.CityId, out var CityId);
 
             if (CityId == 0) //new City is being created
             {
                 //add some defaults
-                this.EditedCity = new City { CityId = 1, Name = "Default City", Description = "Some default description" };
+                this.EditedCity = new City { CityId = 1, Name = "Default City", RegistrationDate = DateTime.Now, Description = "Some default description", Country = new Country { Code = "", Name = "" }, IsCapital = false };//, PointsOfInterest = new List<PointOfInterest>().Add( new PointOfInterest { CityId = 1, Name = "", Description = "", PointOfInterestId = 1 } );
             }
             else
             {
-                this.EditedCity = await CityDataService.GetCityDetails(int.Parse(this.CityId));
+                this.EditedCity = await CityDataService.Get(int.Parse(this.CityId));
             }
-
+            CountryCode = EditedCity.Country.Code.ToString();
+            IsCapital = EditedCity.IsCapital == false ? CityBlazor.Shared.Enums.SimpleChoice.Nao : CityBlazor.Shared.Enums.SimpleChoice.Sim;
         }
 
         protected async Task HandleValidSubmit()
         {
             Saved = false;
+            EditedCity.Country.Code = CountryCode;
 
             if (this.EditedCity.CityId == 0) //new
             {
-                var addedCity = await CityDataService.AddCity(this.EditedCity);
+                var addedCity = await CityDataService.Add(this.EditedCity);
                 if (addedCity != null)
                 {
                     StatusClass = "alert-success";
@@ -68,7 +76,7 @@ namespace CityBlazorApp.Pages
             }
             else
             {
-                await CityDataService.UpdateCity(this.EditedCity);
+                await CityDataService.Update(this.EditedCity);
                 StatusClass = "alert-success";
                 Message = "City updated successfully.";
                 Saved = true;
@@ -83,7 +91,7 @@ namespace CityBlazorApp.Pages
 
         protected async Task DeleteCity()
         {
-            await CityDataService.DeleteCity(this.EditedCity.CityId);
+            await CityDataService.Delete(this.EditedCity.CityId);
 
             StatusClass = "alert-success";
             Message = "Deleted successfully";
@@ -93,7 +101,7 @@ namespace CityBlazorApp.Pages
 
         protected void NavigateToOverview()
         {
-            NavigationManager.NavigateTo("/Cityoverview");
+            NavigationManager.NavigateTo("/citylist");
         }
     }
 }

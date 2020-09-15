@@ -1,6 +1,7 @@
 ﻿@page "/CityList"
 @inject HttpClient Http
 @using CityBlazor.Shared.Models
+@using CityBlazorApp.Services
 
 <h1>Cities</h1>
 @if (cities == null)
@@ -30,21 +31,29 @@ else
                     <td>@city.Description</td>
                     <td>@city.IsCapital</td>
                     <td>
-                    <a href="@($"CityEdit/{city.CityId}")" class="btn btn-primary table-btn">
-                        <i class="fas fa-info-circle">Edit</i>
-                    </a>
-                    <a href="@($"CityEdit/{city.CityId}")" class="btn btn-primary table-btn">
-                        <i class="fas fa-edit"></i>
-                    </a>
-                </td>
+                        <a href="@($"CityEdit/{city.CityId}")" class="btn btn-primary table-btn">
+                            <i class="fas fa-info-circle">Edit</i>
+                        </a>
+                        <a href="@($"CityEdit/{city.CityId}")" class="btn btn-primary table-btn">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                    </td>
                 </tr>
             }
         </tbody>
     </table>
 }
 
+<button @onclick="QuickAddCity" class="btn btn-dark table-btn quick-add-btn">&nbsp;&nbsp;+&nbsp;&nbsp;</button>
+<AddCityDialog @ref="AddCityDialog" CloseEventCallback="@AddCityDialog_OnDialogClose"></AddCityDialog>
+
 @code{
-    private IList<City> cities;
+    private IEnumerable<City> cities { get; set; }
+
+    [Inject]
+    public ICityDataService CityDataService { get; set; }
+
+    protected AddCityDialog AddCityDialog { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
@@ -52,7 +61,14 @@ else
         cities = await Http.GetFromJsonAsync<List<City>>("sample-data/cities.json");
     }
 
-    
+    protected void QuickAddCity()
+    {
+        AddCityDialog.Show();
+    }
 
-    
+    public async void AddCityDialog_OnDialogClose()
+    {
+        cities = (await CityDataService.Get()).ToList();
+        StateHasChanged();
+    }
 }
